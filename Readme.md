@@ -5,8 +5,5 @@ react-native-couchbase-lite
 
 Based on this gist: https://gist.github.com/jchris/3c32524577deff3d69aa
 
-```bash
-react-native init <project>
 
-```
 Libraries already exist here - API is WIP
