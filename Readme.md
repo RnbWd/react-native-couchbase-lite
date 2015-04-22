@@ -3,8 +3,10 @@ react-native-couchbase-lite
 
 ## Instructions
 
+Based on this gist: https://gist.github.com/jchris/3c32524577deff3d69aa
+
 ```bash
 react-native init <project>
 
 ```
-<script src="https://gist.github.com/jchris/3c32524577deff3d69aa.js"></script>
+Libraries already exist here - API is WIP
