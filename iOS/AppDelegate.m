@@ -11,12 +11,27 @@
 
 #import "RCTRootView.h"
 
+#import "CouchbaseLite/CouchbaseLite.h"
+
+#import "CouchbaseLiteListener/CBLListener.h"
+
+#import "CBLRegisterJSViewCompiler.h"
+
 @implementation AppDelegate
+
+- (void)launchCouchbaseLite
+{
+  NSLog(@"Launching Couchbase Lite...");
+  CBLManager* dbmgr = [CBLManager sharedInstance];
+  CBLRegisterJSViewCompiler();
+  NSLog(@"Couchbase Lite url = %@", dbmgr.internalURL);
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   NSURL *jsCodeLocation;
 
+  [self launchCouchbaseLite];
   // Loading JavaScript code - uncomment the one you want.
 
   // OPTION 1
